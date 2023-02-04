@@ -1,0 +1,12 @@
+ /* .green {
+    background-color: rgba(0, 128, 0, 0.411); 
+}  */
+.container {
+    margin: 4rem;
+    background-color: rgba(170, 177, 175, 0.521);
+    border-radius: 5px;
+    padding: 2rem;
+    height: 35vw;
+    font-size: 2rem;
+    overflow-y: auto
+}

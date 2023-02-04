@@ -1,0 +1,6 @@
+.link {
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    width: fit-content;
+}

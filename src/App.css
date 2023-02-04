@@ -1,0 +1,114 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+html {
+  font-size: 10px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.App {
+  margin: 0 auto;
+  font-family: Roboto;
+  font-size: 10px;
+  background-image: url("http://green-forest36.ru/wp-content/uploads/2020/04/2-1.jpg");
+  display: grid;
+  grid-template-areas: 
+  "h h h h"
+  "n c c c"
+}
+header {
+  grid-area: h;
+  height: 5vw;
+}
+nav {
+  grid-area: n;
+  width: 10vw;
+  height: 1000px;
+}
+main {
+  grid-area: c;
+  width: 90vw;
+  height: 1000px;
+}
+
+.label {
+  color: #B4886B;
+  font-weight: bold;
+  display: block;
+}
+.label:after { content: ": " }
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&family=Quicksand:wght@500;700&family=Roboto:wght@400;500&display=swap');
